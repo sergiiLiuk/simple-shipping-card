@@ -1,0 +1,189 @@
+.thumbnail img {
+    max-height: 180px;
+}
+
+.thumbnail .product-title {
+    color: rgb(100, 102, 101);
+}
+
+.price {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.list-group-item .btn-group,
+.btn-checkout {
+    float: right !important;
+}
+
+.card-row-header {
+    color: rgb(65, 63, 65);
+}
+
+.list-group {
+    color: rgb(105, 105, 100);
+}
+
+.checkout-sum {
+    padding: 20px 25px 20px;
+    color: rgb(82, 82, 82);
+}
+
+.checkout-card {
+    background-color: rgb(247, 243, 243);
+}
+
+.checkout-title,
+.icon-container {
+    display: inline;
+}
+
+.checkout.btn-success {
+    width: 100%;
+}
+
+/*--------------------*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.thumbnail:hover .overlay {
+    display: block;
+    background: rgba(88, 88, 88, 0.075);
+}
+
+.title {
+    position: absolute;
+    width: 70%;
+    left: 55px;
+    top: 230px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(90, 89, 89);
+    z-index: 1;
+    transition: top .5s ease;
+}
+
+.thumbnail:hover .title {
+    top: 30px;
+    color: rgb(90, 89, 89);
+}
+
+.btn-add-to-cart {
+    position: absolute;
+    width: 42%;
+    left: 27%;
+    top: 225px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.btn-add-to-cart a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: rgba(92, 93, 94, 0.692);
+    z-index: 1;
+}
+
+.thumbnail:hover .btn-add-to-cart {
+    opacity: 1;
+}
+
+
+.profile-total-price {
+    margin-top: 2px;
+    background-color: rgb(226, 220, 231);
+}
+
+.profile.card {
+    background-color: rgb(124, 122, 122);
+}
+
+.prfile.card-header {
+    margin-bottom: 3px;
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    body {
+        /*background-color: aqua;*/
+    }
+    .title {
+        top: 200px;
+        left: 16%;
+    }
+    .thumbnail:hover .price {
+        display: none;
+    }
+    .thumbnail {
+        max-height: 180px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .col-sm-4 {
+        width: auto;
+    }
+    .thumbnail {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        /*background-color: rgb(95, 21, 89);*/
+    }
+    .btn-add-to-cart {
+        left: 28%;
+    }
+    .title {
+        top: 200px;
+        left: 16%;
+    }
+    .thumbnail:hover .price {
+        display: none;
+    }
+    .thumbnail {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        /* background-color: rgb(94, 14, 185);*/
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        /*background-color: rgb(173, 226, 28);*/
+    }
+    .btn-add-to-cart {
+        left: 22%;
+    }
+    .title {
+        left: 15%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        /*background-color: rgb(233, 101, 14);*/
+    }
+}
